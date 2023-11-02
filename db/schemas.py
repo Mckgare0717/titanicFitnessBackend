@@ -26,7 +26,7 @@ class Progress(BaseModel):
     chest:int
     
 def getUsersDB(): 
-    with open(r"C:\Users\40173492\OneDrive - HRUC\BTEC L2\Desktop\New folder (3)\titanicFitnessBackend\db\userDb.json", "r+") as file: 
+    with open(r"db/userDb.json", "r+") as file: 
         return json.load(file) 
     
 def saveUsersDB(newUsers): 
