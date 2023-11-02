@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from db.schemas import User,getUsersDB
+from db.schemas import User,getUsersDB,Creds,Token, Progress
 
 
 app =FastAPI()
@@ -25,20 +25,32 @@ def welcmePg():
     return{"welcome to my page"}
 
 @app.post("/register")
-async def register(user: User):
+async def register(user: Creds):
     db.append(user)
     return {"message": "User registered successfully"}
 
 # Login route
-@app.post("/login")
-async def login(user: User):
+@app.post("/login", response_model=User)
+async def login(user: Creds):
+    print(db)
     for u in db:
-        if u.email == user.email and u.password == user.password:
-            return {"message": "Login successful"}
+        # print(db[u])
+        if db[u]["email"] == user.email and db[u]["password"] == user.password:
+            # return {"message": "Login successful"}
+            return db[u]
     raise HTTPException(status_code=401, detail="Invalid credentials")
 
+@app.get("/progress", response_model=Progress)
+async def progress(token:Token):
+    
+    #go through the db to find which user the token belongs to
+    #if not found, do an https exception
+    
+    #if found, return the progress from the user you found
+    
+    for u in db:
+        for i  in db[u]["exercise_plans"]:
+            print(db[u]["exercise_plans"])
+            return db[u]["exercise_plans"]
+        
 
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="127.0.0.1", port=8000)

@@ -9,6 +9,12 @@
             "test1"
         ],
         "diet_plans": [],
+        "workout_progress": {
+            "triceps": 30,
+            "biceps": 40,
+            "forearms": 60,
+            "chest": 50
+        },
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMDRlMzg3OC01NWI3LTExZWUtODc0Mi1kOGJiYzFkODQ0NmMifQ.uZL2WvraBC7LU4k2A4lRytggCJCyVfnt281UTeGN7Zc"
     },
     "test2@gmail.com": {
@@ -23,6 +29,12 @@
             "Beginner Bodyweight Routine modifying premium"
         ],
         "diet_plans": [],
+        "workout_progress": {
+            "triceps": 60,
+            "biceps": 30,
+            "forearms": 50,
+            "chest": 30
+        },
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NWIzZTk0Yi01ZDFjLTExZWUtODdiNS1lY2IxZDc0MDZjOWQifQ.1nU3qLPmIDwqN3OwDGdDwapkUu7Qv9MJTTkN5DEps8I"
     }
 }
