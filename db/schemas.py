@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 import json
 
-class user(BaseModel):
+class User(BaseModel):
     email: str
     id:str
     display_name:str
@@ -12,7 +12,7 @@ class user(BaseModel):
     
     
 def getUsersDB(): 
-    with open("db/usersDB.json", "r+") as file: 
+    with open(r"C:\Users\40173492\Desktop\New folder\titanicFitnessBackend\db\userDb.json", "r+") as file: 
         return json.load(file) 
     
 def saveUsersDB(newUsers): 
