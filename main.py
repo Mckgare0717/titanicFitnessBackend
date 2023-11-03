@@ -29,14 +29,19 @@ def welcmePg():
 @app.post("/register",response_model=User)
 async def register(user: newUser):
     newUser = {
-               db["email"]:user.email,
-               db["password"]:user.password, 
-               db["display_name"]:user.display_name,
-               db["age"]:user.age,
+               "email":user.email,
+               "password":user.password, 
+               "display_name":user.display_name,
+               "age":user.age,
+               "exercise_plans": [],
+               "diet_plans" : [],
+               "access_token" : ""
                }
-    
+    #generate unique access token here and give it to the new user 
+
     db[user.email] = newUser
-    return saveUsersDB(db)
+    saveUsersDB(db)
+    return newUser
 
 # Login route
 @app.post("/login", response_model=User)
@@ -49,17 +54,17 @@ async def login(user: Creds):
             return db[u]
     raise HTTPException(status_code=401, detail="Invalid credentials")
 
-@app.get("/progress", response_model=Progress)
-async def progress(token:Token):
+# @app.get("/progress", response_model=Progress)
+# async def progress(token:Token):
     
-    #go through the db to find which user the token belongs to
-    #if not found, do an https exception
+#     #go through the db to find which user the token belongs to
+#     #if not found, do an https exception
     
-    #if found, return the progress from the user you found
+#     #if found, return the progress from the user you found
     
-    for u in db:
-        for i  in db[u]["exercise_plans"]:
-            print(db[u]["exercise_plans"])
-            return db[u]["exercise_plans"]
+#     for u in db:
+#         for i  in db[u]["exercise_plans"]:
+#             print(db[u]["exercise_plans"])
+#             return db[u]["exercise_plans"]
         
 

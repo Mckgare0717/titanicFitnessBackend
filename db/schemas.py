@@ -36,7 +36,7 @@ class newUser(BaseModel):
      
 
 def getUsersDB(): 
-    with open(r"db/userDb.json", "r+") as file: 
+    with open("db/userDb.json", "r+") as file: 
         return json.load(file) 
     
 def saveUsersDB(newUsers): 
