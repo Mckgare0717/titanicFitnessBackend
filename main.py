@@ -1,12 +1,14 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB
+from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser
 
 
 app =FastAPI()
 origins = [
     "http://localhost",
-    "http://localhost:3000",  # Assuming your React app runs on port 3000
+    "http://localhost:3000",
+    "https://localhost",
+    "https://localhost:3000"# Assuming your React app runs on port 3000
 ]
 
 
@@ -24,9 +26,16 @@ db = getUsersDB()
 def welcmePg():
     return{"welcome to my page"}
 
-@app.post("/register")
-async def register(user: Creds):
-    db[user.email] = user
+@app.post("/register",response_model=User)
+async def register(user: newUser):
+    newUser = {
+               db["email"]:user.email,
+               db["password"]:user.password, 
+               db["display_name"]:user.display_name,
+               db["age"]:user.age,
+               }
+    
+    db[user.email] = newUser
     return saveUsersDB(db)
 
 # Login route

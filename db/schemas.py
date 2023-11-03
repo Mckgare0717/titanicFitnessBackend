@@ -5,16 +5,18 @@ class User(BaseModel):
     email: str
     # id:str
     display_name:str
-    # password:str
+    age:int
+    #password:str
     exercise_plans:list
     diet_plans:list
     access_token:str
-    exercise_plans:dict
+    
     
 class Creds(BaseModel):
     email:str
     password:str
     display_name:str = None
+    
     
 class Token(BaseModel):
     access_token:str
@@ -25,6 +27,14 @@ class Progress(BaseModel):
     forearms:int
     chest:int
     
+class newUser(BaseModel):
+    email:str
+    display_name:str
+    password:str
+    age:int
+     
+     
+
 def getUsersDB(): 
     with open(r"db/userDb.json", "r+") as file: 
         return json.load(file) 
