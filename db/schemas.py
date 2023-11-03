@@ -30,7 +30,7 @@ def getUsersDB():
         return json.load(file) 
     
 def saveUsersDB(newUsers): 
-    with open("db/usersDB.json", "w+") as file: 
+    with open("db/userDb.json", "w+") as file: 
         file.write(json.dumps(newUsers, indent=4))
         
 def getExerciseDB():
