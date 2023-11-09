@@ -1,0 +1,3 @@
+fastapi[all]
+pyJWT
+uuid
