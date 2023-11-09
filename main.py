@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser
+import uuid
+import jwt
 
 
 app =FastAPI()
@@ -19,7 +21,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+SECRET_KEY = "titanicFitness"
 
 db = getUsersDB()
 @app.get("/")
@@ -28,14 +30,18 @@ def welcmePg():
 
 @app.post("/register",response_model=User)
 async def register(user: newUser):
+    id =str(uuid.uuid1())
+    tokenID = {"sub":id}
+    token  = jwt.encode(tokenID,SECRET_KEY,algorithm="HS256")
     newUser = {
+                "id":id,
                "email":user.email,
                "password":user.password, 
                "display_name":user.display_name,
                "age":user.age,
                "exercise_plans": [],
                "diet_plans" : [],
-               "access_token" : ""
+               "access_token" : token
                }
     #generate unique access token here and give it to the new user 
 

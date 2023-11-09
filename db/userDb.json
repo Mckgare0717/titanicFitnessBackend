@@ -27,31 +27,24 @@
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NWIzZTk0Yi01ZDFjLTExZWUtODdiNS1lY2IxZDc0MDZjOWQifQ.1nU3qLPmIDwqN3OwDGdDwapkUu7Qv9MJTTkN5DEps8I"
     },
-    "boi@gmail.com": {
-        "email": "boi@gmail.com",
+    "test3@gmail.com": {
+        "id": "<class 'uuid.UUID'>",
+        "email": "test3@gmail.com",
         "password": "1234",
-        "display_name": "boi",
-        "age": 23,
+        "display_name": "hello",
+        "age": 34,
         "exercise_plans": [],
         "diet_plans": [],
-        "access_token": ""
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI8Y2xhc3MgJ3V1aWQuVVVJRCc-In0.6YQm0_2mAF77j9pWe0v4LKb2TntEcGABgdfggULqRDY"
     },
-    "gab@uxb.co.uk": {
-        "email": "gab@uxb.co.uk",
+    "test4@gmail.com": {
+        "id": "72745063-7f04-11ee-b90a-f8ac65b53c76",
+        "email": "test4@gmail.com",
         "password": "1234",
-        "display_name": "gab",
-        "age": 35,
+        "display_name": "test4",
+        "age": 45,
         "exercise_plans": [],
         "diet_plans": [],
-        "access_token": ""
-    },
-    "grow@uxb.org.uk": {
-        "email": "grow@uxb.org.uk",
-        "password": "3456",
-        "display_name": "grow",
-        "age": 22,
-        "exercise_plans": [],
-        "diet_plans": [],
-        "access_token": ""
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3Mjc0NTA2My03ZjA0LTExZWUtYjkwYS1mOGFjNjViNTNjNzYifQ.RSHkfvDV6Z_3glXs4sJiBGkR1kT4VrZ6uoVKa7hoecI"
     }
 }
