@@ -10,7 +10,8 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "https://localhost",
-    "https://localhost:3000"# Assuming your React app runs on port 3000
+    "https://localhost:3000",
+    "*"# Assuming your React app runs on port 3000
 ]
 
 
