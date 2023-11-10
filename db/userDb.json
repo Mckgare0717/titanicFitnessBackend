@@ -46,5 +46,25 @@
         "exercise_plans": [],
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3Mjc0NTA2My03ZjA0LTExZWUtYjkwYS1mOGFjNjViNTNjNzYifQ.RSHkfvDV6Z_3glXs4sJiBGkR1kT4VrZ6uoVKa7hoecI"
+    },
+    "fuck@gmail.com": {
+        "id": "d5c92160-7fb2-11ee-b2af-00a5541ff9ef",
+        "email": "fuck@gmail.com",
+        "password": "1234",
+        "display_name": "fuck",
+        "age": 34,
+        "exercise_plans": [],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNWM5MjE2MC03ZmIyLTExZWUtYjJhZi0wMGE1NTQxZmY5ZWYifQ.fALAqKmMg_9jwdG6gKZ6JM4Hndg1UzmTYlJ3pU3WEVM"
+    },
+    "new@uxb.ac.uk": {
+        "id": "011606ef-7fb5-11ee-86e5-00a5541ff9ef",
+        "email": "new@uxb.ac.uk",
+        "password": "1234",
+        "display_name": "new",
+        "age": 54,
+        "exercise_plans": [],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTE2MDZlZi03ZmI1LTExZWUtODZlNS0wMGE1NTQxZmY5ZWYifQ.tC6USpQeF-lGlVMYK5Ex-pAG_dp7mDnqysmC5hTRmhE"
     }
 }
