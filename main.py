@@ -57,7 +57,7 @@ async def register(user: newUser):
 # Login route
 @app.post("/login", response_model=User)
 async def login(user: Creds):
-    print(db)
+    
     for u in db:
         # print(db[u])
         if db[u]["email"] == user.email and db[u]["password"] == user.password:
