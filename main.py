@@ -30,24 +30,28 @@ def welcmePg():
 
 @app.post("/register",response_model=User)
 async def register(user: newUser):
-    id =str(uuid.uuid1())
-    tokenID = {"sub":id}
-    token  = jwt.encode(tokenID,SECRET_KEY,algorithm="HS256")
-    newUser = {
-                "id":id,
-               "email":user.email,
-               "password":user.password, 
-               "display_name":user.display_name,
-               "age":user.age,
-               "exercise_plans": [],
-               "diet_plans" : [],
-               "access_token" : token
-               }
-    #generate unique access token here and give it to the new user 
+    if user.email in db:
+        raise HTTPException(status_code=401, detail="User already exists")
+    else:
+        id =str(uuid.uuid1())
+        tokenID = {"sub":id}
+        token  = jwt.encode(tokenID,SECRET_KEY,algorithm="HS256")
+        
+        newUser = {
+                    "id":id,
+                "email":user.email,
+                "password":user.password, 
+                "display_name":user.display_name,
+                "age":user.age,
+                "exercise_plans": [],
+                "diet_plans" : [],
+                "access_token" : token
+                }
+        #generate unique access token here and give it to the new user 
 
-    db[user.email] = newUser
-    saveUsersDB(db)
-    return newUser
+        db[user.email] = newUser
+        saveUsersDB(db)
+        return newUser
 
 # Login route
 @app.post("/login", response_model=User)

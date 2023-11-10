@@ -66,5 +66,15 @@
         "exercise_plans": [],
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTE2MDZlZi03ZmI1LTExZWUtODZlNS0wMGE1NTQxZmY5ZWYifQ.tC6USpQeF-lGlVMYK5Ex-pAG_dp7mDnqysmC5hTRmhE"
+    },
+    "test5@gmail.com": {
+        "id": "bebaf56c-7fc4-11ee-950a-f4c88af00667",
+        "email": "test5@gmail.com",
+        "password": "1234",
+        "display_name": "tello",
+        "age": 34,
+        "exercise_plans": [],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZWJhZjU2Yy03ZmM0LTExZWUtOTUwYS1mNGM4OGFmMDA2NjcifQ._3mU11kFrj0e4u9M6u3u4KNzn9dBl3rEEOparh4hrXQ"
     }
 }
