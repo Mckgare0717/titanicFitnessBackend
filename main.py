@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser
+from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser,getWorkouts,usetoken
 import uuid
 import jwt
 
@@ -65,17 +65,34 @@ async def login(user: Creds):
             return db[u]
     raise HTTPException(status_code=401, detail="Invalid credentials")
 
-# @app.get("/progress", response_model=Progress)
-# async def progress(token:Token):
-    
-#     #go through the db to find which user the token belongs to
-#     #if not found, do an https exception
-    
-#     #if found, return the progress from the user you found
-    
-#     for u in db:
-#         for i  in db[u]["exercise_plans"]:
-#             print(db[u]["exercise_plans"])
-#             return db[u]["exercise_plans"]
+@app.post("/workouts")
+async def Workouts(workouts:getWorkouts):
+    db = getUsersDB()
+    newWorkout={
+        "exercise_name":workouts.name,
+        "exercise_type":workouts.type,
+        "exercise_difficulty":workouts.difficulty,
+        "exercise_equipment":workouts.equipment,
+        "exercise_instruction":workouts.inst
+    }
+    for i in db:
+        if workouts.access_token  ==  db[i]["access_token"]:
+            db[i]["exercise_plans"].append(newWorkout)
+            saveUsersDB(db)
+            return newWorkout
+    raise HTTPException(status_code=401,detail="failed to add workout")
+
+
+@app.post("/myworkouts")
+async def  myWorkouts(token:usetoken):
+    db = getUsersDB()
+    for i in db:
+        if token.access_token  == db[i]["access_token"]:
+            if db[i]["exercise_plans"] == []:
+                raise HTTPException(status_code=401,detail="no workouts")
+            return db[i]["exercise_plans"]
         
+
+
+
 

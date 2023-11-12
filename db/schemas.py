@@ -32,6 +32,18 @@ class newUser(BaseModel):
     display_name:str
     password:str
     age:int
+    
+class getWorkouts(BaseModel):
+    access_token:str
+    name:str
+    type:str
+    equipment:str
+    difficulty:str
+    inst:str
+   # exercise_plans:dict
+    
+class usetoken(BaseModel):
+    access_token:str
      
      
 

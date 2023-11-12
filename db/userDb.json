@@ -33,7 +33,43 @@
         "password": "1234",
         "display_name": "hello",
         "age": 34,
-        "exercise_plans": [],
+        "exercise_plans": [
+            {
+                "exercise_name": "Pushups",
+                "exercise_type": "strength",
+                "exercise_difficulty": "intermediate",
+                "exercise_equipment": "body_only",
+                "exercise_instruction": "Lie on the floor face down and place your hands about 36 inches apart while holding your torso up at arms length. Next, lower yourself downward until your chest almost touches the floor as you inhale. Now breathe out and press your upper body back up to the starting position while squeezing your chest. After a brief pause at the top contracted position, you can begin to lower yourself downward again for as many repetitions as needed.  Variations: If you are new at this exercise and do not have the strength to perform it, you can either bend your legs at the knees to take off resistance or perform the exercise against the wall instead of the floor. For the most advanced lifters, you can place your feet at a high surface such as a bench in order to increase the resistance and to target the upper chest more."
+            },
+            {
+                "exercise_name": "Decline EZ-bar skullcrusher",
+                "exercise_type": "strength",
+                "exercise_difficulty": "intermediate",
+                "exercise_equipment": "e-z_curl_bar",
+                "exercise_instruction": "Secure your legs at the end of the decline bench and slowly lay down on the bench. Using a close grip (a grip that is slightly less than shoulder width), lift the EZ bar from the rack and hold it straight over you with your arms locked and elbows in. The arms should be perpendicular to the floor. This will be your starting position. Tip: In order to protect your rotator cuff, it is best if you have a spotter help you lift the barbell off the rack. As you breathe in and you keep the upper arms stationary, bring the bar down slowly by moving your forearms in a semicircular motion towards you until you feel the bar slightly touch your forehead. Breathe in as you perform this portion of the movement. Lift the bar back to the starting position by contracting the triceps and exhaling. Repeat until the recommended amount of repetitions is performed.  Variations: You can use a straight bar or dumbbells to perform this movement. You can also perform it on a flat bench as well."
+            },
+            {
+                "exercise_name": "Dumbbell Bench Press",
+                "exercise_type": "strength",
+                "exercise_difficulty": "intermediate",
+                "exercise_equipment": "dumbbell",
+                "exercise_instruction": "Lie down on a flat bench with a dumbbell in each hand resting on top of your thighs. The palms of your hands will be facing each other. Then, using your thighs to help raise the dumbbells up, lift the dumbbells one at a time so that you can hold them in front of you at shoulder width. Once at shoulder width, rotate your wrists forward so that the palms of your hands are facing away from you. The dumbbells should be just to the sides of your chest, with your upper arm and forearm creating a 90 degree angle. Be sure to maintain full control of the dumbbells at all times. This will be your starting position. Then, as you breathe out, use your chest to push the dumbbells up. Lock your arms at the top of the lift and squeeze your chest, hold for a second and then begin coming down slowly. Tip: Ideally, lowering the weight should take about twice as long as raising it. Repeat the movement for the prescribed amount of repetitions of your training program.  Caution: When you are done, do not drop the dumbbells next to you as this is dangerous to your rotator cuff in your shoulders and others working out around you. Just lift your legs from the floor bending at the knees, twist your wrists so that the palms of your hands are facing each other and place the dumbbells on top of your thighs. When both dumbbells are touching your thighs simultaneously push your upper torso up (while pressing the dumbbells on your thighs) and also perform a slight kick forward with your legs (keeping the dumbbells on top of the thighs). By doing this combined movement, momentum will help you get back to a sitting position with both dumbbells still on top of your thighs. At this moment you can place the dumbbells on the floor. Variations: Another variation of this exercise is to perform it with the palms of the hands facing each other. Also, you can perform the exercise with the palms facing each other and then twisting the wrist as you lift the dumbbells so that at the top of the movement the palms are facing away from the body. I personally do not use this variation very often as it seems to be hard on my shoulders."
+            },
+            {
+                "exercise_name": "Close-grip bench press",
+                "exercise_type": "strength",
+                "exercise_difficulty": "intermediate",
+                "exercise_equipment": "barbell",
+                "exercise_instruction": "Lie back on a flat bench. Using a close grip (around shoulder width), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position. As you breathe in, come down slowly until you feel the bar on your middle chest. Tip: Make sure that - as opposed to a regular bench press - you keep the elbows close to the torso at all times in order to maximize triceps involvement. After a second pause, bring the bar back to the starting position as you breathe out and push the bar using your triceps muscles. Lock your arms in the contracted position, hold for a second and then start coming down slowly again. Tip: It should take at least twice as long to go down than to come up. Repeat the movement for the prescribed amount of repetitions. When you are done, place the bar back in the rack.  Caution: If you are new at this exercise, it is advised that you use a spotter. If no spotter is available, then be conservative with the amount of weight used. Also, beware of letting the bar drift too far forward. You want the bar to fall on your middle chest and nowhere else. Variations: This exercise can also be performed with an e-z bar using the inner handle as well as dumbbells, in which case the palms of the hands will be facing each other."
+            },
+            {
+                "exercise_name": "Rickshaw Carry",
+                "exercise_type": "strongman",
+                "exercise_difficulty": "beginner",
+                "exercise_equipment": "other",
+                "exercise_instruction": "Position the frame at the starting point, and load with the appropriate weight. Standing in the center of the frame, begin by gripping the handles and driving through your heels to lift the frame. Ensure your chest and head are up and your back is straight. Immediately begin walking briskly with quick, controlled steps. Keep your chest up and head forward, and make sure you continue breathing. Bring the frame to the ground after you have reached the end point."
+            }
+        ],
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI8Y2xhc3MgJ3V1aWQuVVVJRCc-In0.6YQm0_2mAF77j9pWe0v4LKb2TntEcGABgdfggULqRDY"
     },
@@ -76,5 +112,23 @@
         "exercise_plans": [],
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZWJhZjU2Yy03ZmM0LTExZWUtOTUwYS1mNGM4OGFmMDA2NjcifQ._3mU11kFrj0e4u9M6u3u4KNzn9dBl3rEEOparh4hrXQ"
+    },
+    "mysmyo@lovemail.com": {
+        "id": "97b52fe2-817b-11ee-a106-10a51d91d394",
+        "email": "mysmyo@lovemail.com",
+        "password": "1234",
+        "display_name": "mysler",
+        "age": 24,
+        "exercise_plans": [
+            {
+                "exercise_name": "Palms-down wrist curl over bench",
+                "exercise_type": "strength",
+                "exercise_difficulty": "intermediate",
+                "exercise_equipment": "barbell",
+                "exercise_instruction": "Start out by placing a barbell on one side of a flat bench. Kneel down on both of your knees so that your body is facing the flat bench. Use your arms to grab the barbell with a pronated grip (palms down) and bring them up so that your forearms are resting against the flat bench. Your wrists should be hanging over the edge. Start out by curling your wrist upwards and exhaling. Slowly lower your wrists back down to the starting position while inhaling. Your forearms should be stationary as your wrist is the only movement needed to perform this exercise. Repeat for the recommended amount of repetitions.  Variations:  This exercise can also be performed sitting down by using your thighs as a resting position for your forearms. Your wrist can hang over your knees and the same movements as mentioned above can be performed. You can also use a dumbbell instead of a barbell."
+            }
+        ],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5N2I1MmZlMi04MTdiLTExZWUtYTEwNi0xMGE1MWQ5MWQzOTQifQ.oOfBTr6m3iLJTCxOeyvIiv6bV_13rWJAXB3y5ygunWQ"
     }
 }
