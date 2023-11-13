@@ -44,6 +44,10 @@ class getWorkouts(BaseModel):
     
 class usetoken(BaseModel):
     access_token:str
+    
+class delWorkout(BaseModel):
+    access_token:str
+    exercise_name:str
      
      
 
@@ -55,16 +59,16 @@ def saveUsersDB(newUsers):
     with open("db/userDb.json", "w+") as file: 
         file.write(json.dumps(newUsers, indent=4))
         
-def getExerciseDB():
-    with open("db/exercise.json","r+") as file:
-        return json.load(file)
+# def getExerciseDB():
+#     with open("db/exercise.json","r+") as file:
+#         return json.load(file)
 
-def getWorkoutsDB():
-    with open("db/workouts.json","r+") as file:
-        return json.load(file)
+# def getWorkoutsDB():
+#     with open("db/workouts.json","r+") as file:
+#         return json.load(file)
     
-def saveWorkoutsDb(newWorkout):
-    with open("db/workouts.json","w+") as file:
-        file.write(json.dumps(newWorkout, indent=4))
+# def saveWorkoutsDb(newWorkout):
+#     with open("db/workouts.json","w+") as file:
+#         file.write(json.dumps(newWorkout, indent=4))
 
     

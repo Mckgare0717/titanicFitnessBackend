@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser,getWorkouts,usetoken
+from db.schemas import User,getUsersDB,Creds,Token, Progress,saveUsersDB,newUser,getWorkouts,usetoken,delWorkout
 import uuid
 import jwt
 
@@ -92,7 +92,25 @@ async def  myWorkouts(token:usetoken):
                 raise HTTPException(status_code=401,detail="no workouts")
             return db[i]["exercise_plans"]
         
-
+@app.delete("/deleteWorkout")
+async def deleteWorkout(delete:delWorkout):
+    db = getUsersDB()
+    for i in db:
+        print("passed")
+        if delete.access_token == db[i]["access_token"]:
+            print("passed")
+            for j in range(len(db[i]["exercise_plans"])):
+                print("passed")
+                if delete.exercise_name == db[i]["exercise_plans"][j]["exercise_name"]:
+                    del db[i]["exercise_plans"][j]
+                    saveUsersDB(db)
+                    return {"message":f"{delete.exercise_name} deleted successfully"}
+                
+    raise HTTPException(status_code=401,detail="failed to delete workout")
+                
+        
+        
+    
 
 
 
