@@ -95,12 +95,9 @@ async def  myWorkouts(token:usetoken):
 @app.delete("/deleteWorkout",response_model=delWorkout)
 async def deleteWorkout(delete:delWorkout):
     db = getUsersDB()
-    for i in db:
-        print("passed")
-        if delete.access_token == db[i]["access_token"]:
-            print("passed")
-            for j in range(len(db[i]["exercise_plans"])):
-                print("passed")
+    for i in db:   
+        if delete.access_token == db[i]["access_token"]: 
+            for j in range(len(db[i]["exercise_plans"])): 
                 if delete.exercise_name == db[i]["exercise_plans"][j]["exercise_name"]:
                     del db[i]["exercise_plans"][j]
                     saveUsersDB(db)
