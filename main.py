@@ -92,7 +92,7 @@ async def  myWorkouts(token:usetoken):
                 raise HTTPException(status_code=401,detail="no workouts")
             return db[i]["exercise_plans"]
         
-@app.delete("/deleteWorkout")
+@app.delete("/deleteWorkout",response_model=delWorkout)
 async def deleteWorkout(delete:delWorkout):
     db = getUsersDB()
     for i in db:
