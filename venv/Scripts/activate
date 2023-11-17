@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\40173492\Desktop\New folder\titanicFitnessBackend\venv"
+VIRTUAL_ENV="C:\Users\40173492\Desktop\New folder (2)\titanicFitnessBackend\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

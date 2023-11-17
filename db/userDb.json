@@ -140,5 +140,50 @@
         ],
         "diet_plans": [],
         "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNzBkOWQ3Mi04MWFiLTExZWUtODZiNC0xMGE1MWQ5MWQzOTQifQ.P0Eg5tfwvFf5In-oH_HsZgG6sGED_44rg4lUVyTFIpk"
+    },
+    "example@gmail.com": {
+        "id": "d5926684-852a-11ee-8994-00a5541ff9ef",
+        "email": "example@gmail.com",
+        "password": "testpass123",
+        "display_name": "jonathan",
+        "age": 17,
+        "exercise_plans": [],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNTkyNjY4NC04NTJhLTExZWUtODk5NC0wMGE1NTQxZmY5ZWYifQ.0ZAe6K975dhw4jEeCx9jYLraW40yovs0LjLlWi7IdhY"
+    },
+    "40198325@hruc.ac.uk": {
+        "id": "7532ac36-852b-11ee-a091-00a5541ff9ef",
+        "email": "40198325@hruc.ac.uk",
+        "password": "frwfgrwghetqse4h",
+        "display_name": "Rizan Rai",
+        "age": 19,
+        "exercise_plans": [],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NTMyYWMzNi04NTJiLTExZWUtYTA5MS0wMGE1NTQxZmY5ZWYifQ.8KFefaUmYSFaAyzTEq6ihOramzBNa5IqttvIDxoqY0I"
+    },
+    "405@hruc.ac.uk": {
+        "id": "2ea65fa7-852c-11ee-8650-00a5541ff9ef",
+        "email": "405@hruc.ac.uk",
+        "password": "uxbridge123",
+        "display_name": "Rizan Rai",
+        "age": 19,
+        "exercise_plans": [
+            {
+                "exercise_name": "Incline Hammer Curls",
+                "exercise_type": "strength",
+                "exercise_difficulty": "beginner",
+                "exercise_equipment": "dumbbell",
+                "exercise_instruction": "Seat yourself on an incline bench with a dumbbell in each hand. You should pressed firmly against he back with your feet together. Allow the dumbbells to hang straight down at your side, holding them with a neutral grip. This will be your starting position. Initiate the movement by flexing at the elbow, attempting to keep the upper arm stationary. Continue to the top of the movement and pause, then slowly return to the start position."
+            },
+            {
+                "exercise_name": "Wide-grip barbell curl",
+                "exercise_type": "strength",
+                "exercise_difficulty": "beginner",
+                "exercise_equipment": "barbell",
+                "exercise_instruction": "Stand up with your torso upright while holding a barbell at the wide outer handle. The palm of your hands should be facing forward. The elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out. Tip: Only the forearms should move. Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the biceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using an E-Z bar or E-Z attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
+            }
+        ],
+        "diet_plans": [],
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZWE2NWZhNy04NTJjLTExZWUtODY1MC0wMGE1NTQxZmY5ZWYifQ.k16v1pSJe3lk71O_hPZNzqJ01EcAeUsXxt-lnF_nklw"
     }
 }
